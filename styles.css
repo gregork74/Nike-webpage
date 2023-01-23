@@ -81,9 +81,6 @@ body{
   transition: 0.3s ease;
 }
 
-.search:hover{
-  transform: rotateZ(25deg);
-}
 
 .text{
   position: absolute;
