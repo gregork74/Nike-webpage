@@ -179,6 +179,7 @@ body{
 
 .historyimg{
   float: right;
+  margin-right: 5em ;
 }
 .historytext{
   float: left;
