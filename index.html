@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <title>Nike</title>
   <link rel="icon" type="image/x-icon" href="images/icons8-nike-16.png">
 </head>
@@ -24,7 +25,20 @@
       </div>
       <div id="home" class="active tab-item">
         <div class="text">
-          <h1>Just Do It !</h1>
+          <h1>Just Do It <a href="" onclick="pika()" style="color: white;">!</a></h1>
+          <script>
+            function pika(msg){
+                Swal.fire({
+                    title: 'Credits',
+                    text: 'Gregor Krapež, 4. RA /14. 2. 2023',
+                    //text: msg,
+                    confirmButtonColor: "black"
+                })
+                event.preventDefault();
+            }
+            
+            
+        </script>
           <p>The revolutionary brand-new technology was made for the best lifting performance and optimal technic. With the new soft cushion, the ankle support is unmatched. Nike has brought us yet another amazing shoe. </p>
           <button><a href="https://www.nike.com/si/t/metcon-6-training-shoe-TvJS6K" target="_blank" style="color:black;">Buy now!</a></button>
         </div>
@@ -60,7 +74,7 @@
           <p>ground up.</p>
         </div>
         <div class="historyimg">
-          <img src="images/Screen-Shot-2016-10-14-at-10.31.21-AM.png" alt="historyshoes">
+          <img src="images/ozi4.png" alt="historyshoes">
         </div>
       </div>
       <div id="contact" class="tab-item">
@@ -84,3 +98,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
